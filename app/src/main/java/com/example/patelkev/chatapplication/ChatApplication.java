@@ -22,8 +22,8 @@ public class ChatApplication extends Application {
         String applicationID = "v2h47JpbrF344wVegMYjF8dpiKFGy11UZXWssvSO";
         String parseServer = "https://api.parse.com/1/";
 
-        applicationID = "93bd0b59a90d46b1999e484431b83f41";
-        parseServer = "https://simplechatclient.herokuapp.com/parse/";
+//        applicationID = "93bd0b59a90d46b1999e484431b83f41";
+//        parseServer = "https://simplechatclient.herokuapp.com/parse/";
 
         ParseObject.registerSubclass(Message.class);
 
@@ -31,7 +31,6 @@ public class ChatApplication extends Application {
                 .applicationId(applicationID)
                 .clientKey("0fGRmvU9pDv1qoOsWNUbJIuQK9NAhZ1ad3KF61jP")
                 .addNetworkInterceptor(new ParseLogInterceptor())
-                .server(parseServer)
                 .build());
     }
 }

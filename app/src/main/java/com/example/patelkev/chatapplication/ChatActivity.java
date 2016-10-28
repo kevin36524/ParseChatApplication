@@ -64,7 +64,7 @@ public class ChatActivity extends AppCompatActivity {
         } else {
             login();
         }
-        mHandler.postDelayed(mRefreshMessagesRunnable, POLL_INTERVAL);
+//        mHandler.postDelayed(mRefreshMessagesRunnable, POLL_INTERVAL);
     }
 
     private void startWithCurrentUser() {
